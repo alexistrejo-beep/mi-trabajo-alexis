@@ -1,0 +1,17 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.caja1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}

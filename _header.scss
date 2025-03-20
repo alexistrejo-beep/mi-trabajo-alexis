@@ -1,0 +1,13 @@
+
+header {
+    background-color: $color-header-bg;
+    color: $color-header-text;
+    text-align: center;
+    padding: 30px;
+
+    h2 {
+        font-size: 2rem;
+        text-decoration: underline;
+        text-decoration-color: rgb(240, 228, 98);
+    }
+}

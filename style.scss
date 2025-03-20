@@ -1,21 +1,18 @@
+@import 'variables';
+@import 'mixin';
+@import 'header';
+@import 'body';
+@import 'h1h2h3';
+@import 'imagenvideo';
+@import 'media';
+@import 'footer';
+@import 'navbar';
+@import 'container';
+@import 'keyframes';
 
-$primary-bg: rgb(173, 154, 87);
-$secondary-bg: rgb(6, 6, 6);
-$text-color: rgb(181, 161, 81);
-$header-text: rgb(116, 113, 83);
-$highlight-color: rgb(240, 228, 98);
 
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-@mixin responsive($breakpoint) {
-    @if $breakpoint == mobile {
-        @media (max-width: 480px) { @content; }
-    } @else if $breakpoint == tablet {
-        @media (max-width: 768px) { @content; }
-    }
-}
+
+
+

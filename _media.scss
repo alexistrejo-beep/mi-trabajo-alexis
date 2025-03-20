@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    header {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    form {
+        padding: 15px;
+    }
+    .form-label, .form-control {
+        font-size: 0.9rem;
+    }
+    button, .btn {
+        padding: 8px 15px;
+    }
+}

@@ -1,0 +1,25 @@
+h1, h2, h3 {
+    font-family: $font-family-headings;
+    color: $color-heading;
+    @include fadeIn;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    background-color: $color-h3-bg;
+    color: $color-h3-text;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    background-color: $color-paragraph-bg;
+    color: black;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 10px;
+}

@@ -1,0 +1,13 @@
+.navbar {
+    background-color: $color-navbar-bg;
+
+    a {
+        color: $color-link;
+        text-decoration: none;
+        padding: 10px 15px;
+
+        &:hover {
+            background-color: $color-link-hover;
+        }
+    }
+}
