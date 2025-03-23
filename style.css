@@ -6,24 +6,24 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: rgb(173, 154, 87);
+  background-color: rgb(212, 183, 79);
 }
 
-header {
+header  {
   background-color: rgb(6, 6, 6);
-  color: rgb(116, 113, 83);
+  color: rgb(238, 214, 32);
   text-align: center;
   padding: 30px;
 }
 header h2 {
   font-size: 2rem;
   text-decoration: underline;
-  text-decoration-color: rgb(240, 228, 98);
+  text-decoration-color: rgb(238, 221, 37);
 }
 
 h1, h2, h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(181, 161, 81);
+  color: rgb(224, 193, 68);
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -33,8 +33,8 @@ h1 {
 
 h3 {
   font-size: 1.5rem;
-  background-color: rgb(79, 72, 72);
-  color: rgb(231, 220, 192);
+  background-color: rgb(120, 119, 113);
+  color: rgb(239, 187, 55);
   text-align: center;
   padding: 10px;
 }
@@ -69,7 +69,7 @@ p {
 
 footer {
   background-color: #dacbcb;
-  color: white;
+  color: rgb(27, 25, 25);
   text-align: center;
   padding: 15px;
 }
@@ -78,12 +78,12 @@ footer {
   background-color: #1a1a17;
 }
 .navbar a {
-  color: rgb(223, 223, 162);
+  color: rgb(237, 191, 40);
   text-decoration: none;
   padding: 10px 15px;
 }
 .navbar a:hover {
-  background-color: #252421;
+  background-color: #ebc030;
 }
 
 .container {
@@ -145,4 +145,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+
