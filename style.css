@@ -14,11 +14,16 @@ header  {
   color: rgb(238, 214, 32);
   text-align: center;
   padding: 30px;
+background-image:url('imagenes\ y\ video/soldando.jpg')
+
+
 }
 header h2 {
   font-size: 2rem;
   text-decoration: underline;
   text-decoration-color: rgb(238, 221, 37);
+
+
 }
 
 h1, h2, h3 {
