@@ -1,47 +1,59 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 body {
-  font-family: "Arial", sans-serif;
-  background-color: rgb(212, 183, 79);
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(16, 16, 15);
+  margin: 0;
+  padding: 0;
+
 }
 
-header  {
+header {
   background-color: rgb(6, 6, 6);
-  color: rgb(238, 214, 32);
+  background-image: url('../imagenes y video/lasprimeras.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+  min-height: 45vh;
+  color: rgb(177, 175, 158);
   text-align: center;
   padding: 30px;
-background-image:url('../imagenes\ y\ video/soldando.jpg')
-
-
 }
-header h2 {
-  font-size: 2rem;
-  text-decoration: underline;
-  text-decoration-color: rgb(238, 221, 37);
-
-
+.header-title {
+  font-size: 80px;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 6px 6px 12px rgb(0, 0, 0);
+  -webkit-text-fill-color: rgb(238, 214, 94);
+  animation: zoomIn 1.5s ease-in-out; 
 }
 
-h1, h2, h3 {
+h2, h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(224, 193, 68);
   animation: fadeIn 1s ease-in-out;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
 h3 {
   font-size: 1.5rem;
-  background-color: rgb(120, 119, 113);
-  color: rgb(239, 187, 55);
   text-align: center;
-  padding: 10px;
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(158, 157, 155);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 p {
@@ -52,62 +64,75 @@ p {
   border-radius: 10px;
 }
 
-.imagen {
-  width: 100%;
-  max-width: 300px;
-  border: 5px solid black;
-  margin: 10px;
-  border-radius: 8px;
-  animation: zoomIn 1s ease-in-out;
-}
-.imagen:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
+.catalogo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
 }
 
-.video {
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
-  margin: 10px;
-}
-
-footer {
-  background-color: #dacbcb;
-  color: rgb(27, 25, 25);
+.bombilla {
+  background-color: rgb(158, 157, 155);
+  border-radius: 10px;
+  padding: 1px;
   text-align: center;
-  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
+.bombilla:hover {
+  transform: scale(1.05);
+}
+
+.bombilla img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.bombilla button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(6, 6, 6);
+  color: rgb(236, 222, 71);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.bombilla button:hover {
+  background-color: #252421;
+}
+footer {
+  background-color: #282626;
+  color: rgb(15, 14, 14);
+  text-align: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+}
 .navbar {
-  background-color: #1a1a17;
+  background-color: #292928;
 }
+
 .navbar a {
-  color: rgb(237, 191, 40);
+  color: rgb(229, 194, 79);
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 5px 15px;
 }
+
 .navbar a:hover {
   background-color: #ebc030;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
 
-.caja1 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
 
 @keyframes fadeIn {
   0% {
@@ -122,32 +147,43 @@ footer {
     transform: translateY(0);
   }
 }
+
 @keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
+  0% {
+      transform: scale(0.5); 
+      opacity: 0;
   }
-  to {
-    opacity: 1;
-    transform: scale(1);
+  100% {
+      transform: scale(1); 
+      opacity: 1;
   }
 }
+
+
 @media (max-width: 768px) {
-  header h2 {
+  .header-title {
+    font-size: 60px;
+  }
+
+  h2 {
     font-size: 1.5rem;
   }
+
   p {
     font-size: 0.9rem;
   }
-  form {
-    padding: 15px;
+
+  .catalogo-container {
+    flex-direction: column;
+    align-items: center;
   }
-  .form-label, .form-control {
-    font-size: 0.9rem;
+
+  .bombilla {
+    width: 90%;
   }
-  button, .btn {
-    padding: 8px 15px;
+
+  .video {
+    max-width: 100%;
+    height: auto;
   }
 }
-
-
