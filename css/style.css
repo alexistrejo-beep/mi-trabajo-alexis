@@ -5,40 +5,40 @@
   box-sizing: border-box;
 }
 
-
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: rgb(16, 16, 15);
+  font-family:Georgia, Times, 'Times New Roman', serif; 
+  background-color: rgb(15, 15, 14);
   margin: 0;
   padding: 0;
-
 }
 
+
 header {
-  background-color: rgb(6, 6, 6);
-  background-image: url('../imagenes y video/lasprimeras.jpg'); 
+  background-color: rgb(15, 15, 14);
+  background-image: url('../imagenes y video/lasprimeras.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
- 
   min-height: 45vh;
   color: rgb(177, 175, 158);
   text-align: center;
   padding: 30px;
 }
+
 .header-title {
-  font-size: 80px;
-  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: 70px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
   text-transform: uppercase;
   text-shadow: 6px 6px 12px rgb(0, 0, 0);
-  -webkit-text-fill-color: rgb(238, 214, 94);
-  animation: zoomIn 1.5s ease-in-out; 
+  -webkit-text-fill-color: rgb(236, 222, 71);
+  animation: zoomIn 1.5s ease-in-out;
 }
 
+
 h2, h3 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(224, 193, 68);
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  color: rgb(236, 222, 71);
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -48,6 +48,7 @@ h3 {
   padding: 5px;
 }
 
+
 img {
   width: 100%;
   max-width: 300px;
@@ -56,6 +57,7 @@ img {
   padding: 5px;
 }
 
+
 p {
   background-color: rgb(158, 157, 155);
   color: black;
@@ -63,6 +65,49 @@ p {
   padding: 15px;
   border-radius: 10px;
 }
+
+
+.container {
+  padding: 20px;
+}
+
+.form-label {
+  color:rgb(236, 222, 71); ;
+}
+
+
+.btn-primary {
+  background-color: rgb(236, 222, 71);
+  border-color: rgb(236, 222, 71);
+  color: rgb(15, 15, 15);
+}
+
+.btn-primary:hover {
+  background-color: rgb(200, 190, 60);
+  border-color: rgb(200, 190, 60);
+}
+
+.btn-outline-primary {
+  color: rgb(236, 222, 71);
+  border-color: rgb(236, 222, 71);
+}
+
+.btn-outline-primary:hover {
+  background-color: rgb(236, 222, 71);
+  color: rgb(15, 15, 15);
+}
+
+
+.form-control {
+  background-color: rgb(15, 15, 15);
+  border: 1px solid rgb(236, 222, 71);
+  color: rgb(236, 222, 71);
+}
+
+.form-control::placeholder {
+  color: rgba(236, 222, 71, 0.7);
+}
+
 
 .catalogo-container {
   display: flex;
@@ -109,29 +154,34 @@ p {
 .bombilla button:hover {
   background-color: #252421;
 }
+
+
 footer {
   background-color: #282626;
   color: rgb(15, 14, 14);
   text-align: center;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: Georgia, Times, 'Times New Roman', serif;
   font-size: 14px;
   margin-top: 20px;
 }
+
+
 .navbar {
   background-color: #292928;
 }
 
 .navbar a {
-  color: rgb(229, 194, 79);
+  color: rgb(236, 222, 71);
   text-decoration: none;
   padding: 5px 15px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 .navbar a:hover {
-  background-color: #ebc030;
+  background-color: rgb(236, 222, 71);
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
-
 
 
 @keyframes fadeIn {
@@ -150,12 +200,12 @@ footer {
 
 @keyframes zoomIn {
   0% {
-      transform: scale(0.5); 
-      opacity: 0;
+    transform: scale(0.5);
+    opacity: 0;
   }
   100% {
-      transform: scale(1); 
-      opacity: 1;
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -187,3 +237,4 @@ footer {
     height: auto;
   }
 }
+
